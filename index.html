@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Corebiz - Frondend Challenge</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/CSS/slick-theme.css"/>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+      <header>
+        <div class="header-content container">
+          <div class="container-menu-mobile visible-xs">
+            <button class="botao-menu-mobile"></button>
+            <nav id="menu-mobile"></nav>
+          </div>
+          <div class="logo"><img src="/images/logo-corebiz.png" alt="Menu"></div>
+          <div class="busca hidden-xs">
+            <input id="search" type="text" name="search" value="O que está procurando?">
+            <input id="btn-buscar" type="button">
+          </div>
+          <div class="conta hidden-xs">
+            <span>Minha Conta</span>
+          </div>
+          <div class="carrinho">
+            <i class="icone-carrinho"></i>
+            <span class="carrinho-qtd">0</span>
+          </div>
+        </div>
+        <div class="busca mobile visible-xs">
+          <input id="search" type="text" name="search" value="O que está procurando?">
+          <input id="btn-buscar" type="button">
+        </div>
+      </header>
+      <section id="banner-full-mobile" class="visible-xs">
+        <ul class="banner-conteudo">
+          <li><img src="/images/Banner.jpg" alt=""></li>
+          <li><img src="/images/Banner.jpg" alt=""></li>
+          <li><img src="/images/Banner.jpg" alt=""></li>
+          <li><img src="/images/Banner.jpg" alt=""></li>
+        </ul> 
+      </section>
+      <section id="banner-full-desktop" class="hidden-xs">
+        <ul class="banner-conteudo">
+          <li><img src="/images/Banner-1.jpg" alt=""></li>
+          <li><img src="/images/Banner-1.jpg" alt=""></li>
+          <li><img src="/images/Banner-1.jpg" alt=""></li>
+          <li><img src="/images/Banner-1.jpg" alt=""></li>
+        </ul> 
+      </section>
+      <section id="conteudo-home">
+      </section>
+      <footer>
+        <div class="container">
+          <section class="localizacao">
+            <h3 class="titulo-footer">Localização</h3>
+            <div class="barra"></div>
+            <ul>
+              <li><a href="https://goo.gl/maps/yNoCwC72P7TAMnmr5">Avenida Andrômeda, 2000. Bloco 6 e 8</a></li>
+              <li><span>Alphavile SP</span></li>
+              <li><a href="mailto:brasil@corebiz.ag">brasil@corebiz.ag</a></li>
+              <li><a href="tel:5501130901039">+55 11 3090 1039</a></li>
+            </ul>
+          </section>
+          <section class="contato">
+            <ul>
+              <li><button class="botao-contato"><i class="icone-email"></i><a href="/">ENTRE EM CONTATO</a></button></li>
+              <li><button class="botao-consultor"><i class="icone-consultor"></i><a href="/">FALE COM O NOSSO CONSULTOR ONLINE</a></button></li>
+            </ul>
+          </section>
+          <section class="desenvolvimento">
+            <ul>
+              <li class="dev"><a href="/"><img src="/images/site-logo-corebiz-preto-cinza.png" alt="Corebiz"></a></li>
+              <li class="vtex"><a href="/"><img src="images/Vector.png" alt="Vtex"></a></li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="/JS/slick.min.js"></script> 
+      <script type="text/javascript" src="/JS/slick.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.banner-conteudo').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            speed: 1000,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          });
+        });
+      </script>
+  </body>
+</html>
